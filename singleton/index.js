@@ -1,11 +1,8 @@
 "use strict";
 exports.__esModule = true;
 var Counter_1 = require("./counter/Counter");
+var testInAnotherFile_1 = require("./testInAnotherFile");
+(0, testInAnotherFile_1.increaseCounter4times)();
 var counter1 = new Counter_1.Counter();
-var counter2 = new Counter_1.Counter();
 counter1.increaseCounter();
-counter1.increaseCounter();
-counter2.increaseCounter();
-counter2.increaseCounter();
-console.log("Count from counter1 = ".concat(counter1.count));
-console.log("Count from counter2 = ".concat(counter2.count));
+console.log("it will be 5 = ".concat(counter1.count));
