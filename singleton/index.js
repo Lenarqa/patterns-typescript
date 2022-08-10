@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Counter_1 = require("./counter/Counter");
+var counter1 = new Counter_1.Counter();
+var counter2 = new Counter_1.Counter();
+counter1.increaseCounter();
+counter1.increaseCounter();
+counter2.increaseCounter();
+counter2.increaseCounter();
+console.log("Count from counter1 = ".concat(counter1.count));
+console.log("Count from counter2 = ".concat(counter2.count));
